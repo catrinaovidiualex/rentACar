@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)) ;
+    grid-template-rows: 200px 200px;
+    
+
+}
+
+.masina{
+    border:1px solid green;
+    width:150px;
+    height:150px;
+
+}
+
+.masina p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.marca{
+    font-weight: bold;
+}

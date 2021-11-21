@@ -24,3 +24,12 @@
 .marca{
     font-weight: bold;
 }
+
+
+.disabled{
+
+   background-color: red;
+
+    box-shadow:coral;
+
+}

@@ -12,58 +12,37 @@
     <h1>Rent a car from the list</h1>
     <div class="container">
 
-        <section class="masina">
-            <p class="marca">Ford Focus</p>
-            <p class="anfabricatie">2003</p>
-            <p class="combustibil">motorina</p>
-            <p class="statusinchiriere">neinchiriata</p>
-        </section>
+    
 
-        <section class="masina">
-            <p class="marca">Opel Astra</p>
-            <p class="anfabricatie">2012</p>
-            <p class="combustibil">benzina</p>
-            <p class="statusinchiriere">inchiriata</p>
-        </section>
-
-        <section class="masina">
-            <p class="marca">BMW X5</p>
-            <p class="anfabricatie">2019</p>
-            <p class="combustibil">motorina</p>
-            <p class="statusinchiriere">neinchiriata</p>
-        </section>
-
-        <section class="masina">
-            <p class="marca">VW Golf 5</p>
-            <p class="anfabricatie">2020</p>
-            <p class="combustibil">motorina</p>
-            <p class="statusinchiriere">neinchiriata</p>
-        </section>
-
-        <section class="masina">
-            <p class="marca">Cielo</p>
-            <p class="anfabricatie">1999</p>
-            <p class="combustibil">benzina</p>
-            <p class="statusinchiriere">neinchiriata</p>
-        </section>
-
-        <section class="masina">
-            <p class="marca">Dacia Logan</p>
-            <p class="anfabricatie">2008</p>
-            <p class="combustibil">benzina</p>
-            <p class="statusinchiriere">inchiriata</p>
-        </section>
-
+      
     </div>
-    <input type="text" id="addmasina" placeholder="adauga masina noua">
+    <h3>Marca</h3>
+    <input type="text" id="addmarca" placeholder="adauga marca masina">
+
+
+    <h3>An Fabricatie</h3>
+    <input type="text" id="addan" placeholder="adauga an masina">
+
+    <h3>Combustibil</h3>
+    <input type="text" id="addcombustibil" placeholder="adauga combustibil masina">
+
+    <h3>Status Inchiriere</h3>
+    <input type="text" id="addstatusinch" placeholder="adauga status masina">
+
+    <p>Pentru a inchiria o masina din lista alegeti marca acesteia:</p>
+
+    <input type="text" id="deinchiriat" placeholder="marca de inchiriat">
+
     <button class="inchiriere">Inchiriaza</button>
     <button class="adaugare">Adauga Masina</button>
     <button class="stergere">Sterge Masina</button>
 
 
-
-    <script src="app.js"></script>
     <script src="data.js"></script>
+
+    <script src="helpers.js"></script>
     
+    <script src="app.js"></script>
+
 </body>
 </html>

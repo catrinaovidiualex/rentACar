@@ -85,8 +85,12 @@ btnAdd.addEventListener("click",()=>{
     adaugareMasina();
 })
 
-function verificareStatus(){
-    
+function verificareStatus(marcaM){
+    for (let i=0;i<masini.length;i++){
+        if(masini[i].status=="inchiriata" && masini[i].marca==marcaM)
+        return true;
+    }
+    return false;
 }
 
 function inchiriaza(){

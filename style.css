@@ -17,8 +17,8 @@ body{
 
 .masina{
     border:2px solid rgb(2, 12, 95);
-    width:120px;
-    height:120px;
+    width:30%;
+    height:90%;
 }
 
 .masina p{
@@ -46,7 +46,7 @@ body{
 
 }
 
-h3{
+h3, p{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color:blue;
@@ -67,3 +67,9 @@ footer{
     color:rgb(85, 87, 87); 
     text-align: center;
     }
+
+.btn{
+    background-color: rgb(200, 218, 252);
+    height:20px;
+    border-radius: 5px;;
+}

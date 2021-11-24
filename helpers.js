@@ -103,6 +103,23 @@ function inchiriaza(){
         
     }
 
+function stergeMasina(){
+    let list=[];
+    let masinaDeSters=prompt("Introduceti marca masinii pe care doriti sa o stergeti:");
+    for(let i=0;i<masini.length;i++){
+        if(masini[i].marca!==masinaDeSters){
+            list.push(masini[i]);
+        }
+    }
+
+    masini=[...list];//spread operator
+
+   return masini;
+
+}    
+
+
+
 }
 
 

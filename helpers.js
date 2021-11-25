@@ -14,7 +14,9 @@ function createCard(obj){
     let section=document.createElement('section');
 
     section.classList.add('masina');
-   
+
+    
+    
 
     let p1=document.createElement("p");
     p1.classList.add("marca");
@@ -35,9 +37,15 @@ function createCard(obj){
     p4.classList.add("statusinchiriere");
     p4.textContent=obj.status;
     section.appendChild(p4);
+    if(obj.status==="inchiriata"){
+        section.style.backgroundColor='orange';
+        section.style.webkitTextFillColor='red';
+
+    }
 
     return section;
 
+    
 }
 
 
@@ -100,6 +108,7 @@ function inchiriaza(){
     for (let i=0;i<masini.length;i++){
         if(masini[i].marca===masinaDeInchiriat && masini[i].status==="neinchiriata"){
             masini[i].status="inchiriata";
+
         }
     }
 

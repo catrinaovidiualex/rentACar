@@ -1,4 +1,5 @@
 let btnAdd=document.querySelector(".adaugare");
+let btnDlt=document.querySelector(".stergere");
 let container=document.querySelector(".container");
 
 
@@ -103,6 +104,12 @@ function inchiriaza(){
         
     }
 
+
+
+
+
+}
+
 function stergeMasina(){
     let list=[];
     let masinaDeSters=prompt("Introduceti marca masinii pe care doriti sa o stergeti:");
@@ -114,13 +121,13 @@ function stergeMasina(){
 
     masini=[...list];//spread operator
 
-   return masini;
+    attachCards(masini);
 
-}    
+}  
 
-
-
-}
+btnDlt.addEventListener("click",()=>{
+    stergeMasina();
+})
 
 
 

@@ -1,5 +1,6 @@
 let btnAdd=document.querySelector(".adaugare");
 let btnDlt=document.querySelector(".stergere");
+let btnInch=document.querySelector(".inchiriere");
 let container=document.querySelector(".container");
 
 
@@ -38,8 +39,6 @@ function createCard(obj){
     return section;
 
 }
-
-
 
 
 function attachCards(vector){
@@ -96,19 +95,21 @@ function verificareStatus(marcaM){
 
 function inchiriaza(){
    
-    let masinadeinchiriat=document.querySelector("#deinchiriat");
-    while(masinadeinchiriat.value===masini.marca && masini.status.value!="neinchiriata"){
-
-        masini.status.value="inchiriata";
-
-        
+    
+    let masinaDeInchiriat=prompt("Introduceti marca masinii pe care doriti sa o inchriati:")
+    for (let i=0;i<masini.length;i++){
+        if(masini[i].marca===masinaDeInchiriat && masini[i].status==="neinchiriata"){
+            masini[i].status="inchiriata";
+        }
     }
 
-
-
-
-
+    attachCards(masini);
 }
+
+btnInch.addEventListener("click",()=>{
+    inchiriaza();
+})
+
 
 function stergeMasina(){
     let list=[];

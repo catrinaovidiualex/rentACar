@@ -1,7 +1,7 @@
 let masini=[
 
     {
-        marca:"Ford focus",
+        marca:"Ford Focus",
         anfabricatie:2003,
         combustibil:"motorina",
         status:"neinchiriata"

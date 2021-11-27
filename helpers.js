@@ -1,6 +1,7 @@
 let btnAdd=document.querySelector(".adaugare");
 let btnDlt=document.querySelector(".stergere");
 let btnInch=document.querySelector(".inchiriere");
+let btnRetur=document.querySelector(".returnare");
 let container=document.querySelector(".container");
 
 
@@ -138,6 +139,27 @@ function stergeMasina(){
 btnDlt.addEventListener("click",()=>{
     stergeMasina();
 })
+
+function returnareMasinaInch(){
+
+       
+    let masinaDeReturnat=prompt("Introduceti marca masinii pe care doriti sa o returnati:")
+    for (let i=0;i<masini.length;i++){
+        if(masini[i].marca===masinaDeReturnat && masini[i].status==="inchiriata"){
+            masini[i].status="neinchiriata";
+
+        }
+    }
+
+    attachCards(masini);
+
+}
+
+btnRetur.addEventListener("click",()=>{
+    returnareMasinaInch();
+})
+
+
 
 
 
